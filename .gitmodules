@@ -1,0 +1,12 @@
+[submodule "dophax"]
+	path = dophax
+	url = git@github.com:therocode/dophax.git
+[submodule "json"]
+	path = json
+	url = https://github.com/nlohmann/json.git
+[submodule "thero"]
+	path = thero
+	url = https://github.com/therocode/thero.git
+[submodule "spring"]
+	path = spring
+	url = git@github.com:therocode/spring.git
