@@ -1,0 +1,146 @@
+{
+    "data_types": [
+        {
+            "dependencies": [
+                "#include <cstdint>"
+            ],
+            "name": "int32",
+            "output": "int32_t"
+        },
+        {
+            "dependencies": [
+                "#include <dpx/tableid.hpp>"
+            ],
+            "name": "table_id",
+            "output": "dpx::TableId"
+        },
+        {
+            "dependencies": [
+                "#include <spr/glm.hpp>"
+            ],
+            "name": "vec2",
+            "output": "glm::vec2"
+        },
+        {
+            "dependencies": [
+                "#include <fea/rendering/color.hpp>"
+            ],
+            "name": "color",
+            "output": "fea::Color"
+        },
+        {
+            "dependencies": [
+                ""
+            ],
+            "name": "float",
+            "output": "float"
+        },
+        {
+            "dependencies": [
+                "#include <spr/glm.hpp>"
+            ],
+            "name": "ivec2",
+            "output": "glm::ivec2"
+        },
+        {
+            "dependencies": [
+                "#include <string>"
+            ],
+            "name": "string",
+            "output": "std::string"
+        },
+        {
+            "dependencies": [
+                "#include <cstring>"
+            ],
+            "name": "size_t",
+            "output": "size_t"
+        },
+        {
+            "dependencies": [
+                "#include <spr/hash/stringhash.hpp>"
+            ],
+            "name": "string_hash",
+            "output": "spr::StringHash"
+        },
+        {
+            "dependencies": [
+                "#include <spr/orientation/orientation.hpp>"
+            ],
+            "name": "orientation",
+            "output": "spr::Orientation"
+        },
+        {
+            "dependencies": [
+                ""
+            ],
+            "name": "bool",
+            "output": "bool"
+        }
+    ],
+    "field_types": [
+        {
+            "dependencies": [
+                ""
+            ],
+            "name": "default",
+            "output": "|type| |name|;"
+        },
+        {
+            "dependencies": [
+                "#include <thero/optional.hpp>"
+            ],
+            "name": "nullable",
+            "output": "th::Optional<|type|> |name|;"
+        },
+        {
+            "dependencies": [
+                "#include <vector>"
+            ],
+            "name": "list",
+            "output": "std::vector<|type|> |name|;"
+        },
+        {
+            "dependencies": [
+                "#include <unordered_map>"
+            ],
+            "name": "hash_map",
+            "output": "std::unordered_map<|t:key|, |type|> |name|;"
+        },
+        {
+            "dependencies": [
+                "#include <memory>"
+            ],
+            "name": "shared_ptr",
+            "output": "std::shared_ptr<|type|> |name|;"
+        }
+    ],
+    "settings": {
+        "human_readable": true,
+        "output_directory": "generated",
+        "templates": [
+            "templates/tables.dpt",
+            "templates/addutil.dpt",
+            "templates/tablecapacity.dpt",
+            "templates/debugguidata.dpt",
+            "templates/showdatatables.dpt",
+            "templates/tablesregistering.dpt"
+        ]
+    },
+    "tables": [
+        {
+            "columns": [
+                {
+                    "data_type": "int32",
+                    "field_type": "default",
+                    "field_type_variables": [],
+                    "name": "amount"
+                }
+            ],
+            "description": "life",
+            "external_id": true,
+            "inherits": null,
+            "name": "health"
+        }
+    ]
+}
